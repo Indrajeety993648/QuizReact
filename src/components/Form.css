@@ -1,0 +1,133 @@
+/* Form.css */
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: var(--form-bg);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.form-container h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--form-header-color);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--form-label-color);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: var(--form-input-focus-border);
+  outline: none;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: var(--button-bg);
+  color: var(--button-color);
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover-bg);
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 1rem;
+    top: 10%;
+    transform: translateY(-10%);
+  }
+
+  .form-container h2 {
+    font-size: 1.25rem;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}
+
+/* Light Mode Form Styles */
+.light-mode .form-container {
+  background-color: #ffffff;
+  border-color: #dddddd;
+}
+
+.light-mode .form-group input {
+  border-color: #cccccc;
+}
+
+.light-mode button {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.light-mode button:hover {
+  background-color: #0056b3;
+}
+
+/* Dark Mode Form Styles */
+.dark-mode .form-container {
+  background-color: #1e1e1e;
+  border-color: #333333;
+}
+
+.dark-mode .form-group input {
+  border-color: #444444;
+}
+
+.dark-mode button {
+  background-color: #28a745;
+  color: #ffffff;
+}
+
+.dark-mode button:hover {
+  background-color: #218838;
+}
+
+/* Additional Styles */
+.form-container p {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: var(--form-helper-color);
+}
+
+.form-switch button {
+  background: none;
+  border: none;
+  color: var(--button-bg);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.form-switch button:hover {
+  color: var(--button-hover-bg);
+}

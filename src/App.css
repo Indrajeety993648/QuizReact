@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* App.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--body-bg);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 1rem;
+  background-color: var(--header-bg);
+  color: var(--header-color);
+}
+
+.header-left h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.header-right .theme-toggle-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--header-color);
+  transition: color 0.3s ease;
+}
+
+.header-right .theme-toggle-button:hover {
+  color: var(--button-hover-color);
+}
+
+/* Center the content both horizontally and vertically */
+.main-content {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex: 1;
+  padding: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.form-wrapper {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.light-mode {
+  --header-bg: #ffffff;
+  --header-color: #000000;
+  --button-hover-color: #555555;
+  --body-bg: #f0f0f0;
+  --form-bg: #ffffff;
+  --form-header-color: #333333;
+  --form-label-color: #555555;
+  --form-input-focus-border: #007bff;
+  --button-bg: #007bff;
+  --button-color: #ffffff;
+  --button-hover-bg: #0056b3;
+  --form-helper-color: #777777;
+}
+
+.dark-mode {
+  --header-bg: #1d1616;
+  --header-color: #ffffff;
+  --button-hover-color: #aaaaaa;
+  --body-bg: #000000;
+  --form-bg: #0b0a0a;
+  --form-header-color: #ffffff;
+  --form-label-color: #cccccc;
+  --form-input-focus-border: #28a745;
+  --button-bg: #28a745;
+  --button-color: #ffffff;
+  --button-hover-bg: #218838;
+  --form-helper-color: #bbbbbb;
 }

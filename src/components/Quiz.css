@@ -1,0 +1,175 @@
+/* General styles for the quiz */
+body {
+  background-color: #b0c5e0; /* Light blue background */
+}
+
+.quiz-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #1d2b45; /* Dark background for the quiz card */
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow for the card */
+  color: white; /* White text color */
+}
+
+.question-container {
+  position: relative;
+  border: 1px solid #48506b;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #2e3c5a;
+  border-bottom: 1px solid #48506b;
+}
+
+.question-number {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.timer {
+  font-size: 1.2em;
+  color: #ff4e42; /* Red color for the timer */
+}
+
+.question-box {
+  padding: 20px;
+}
+
+.question-text {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.options-container {
+  margin-top: 20px;
+}
+
+.option-container {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  border: 2px solid #48506b;
+  background-color: #2e3c5a; /* Dark background for options */
+}
+
+.option-container:hover {
+  background-color: #3b4b68;
+  border-color: #7a7b8a;
+}
+
+.option-container input {
+  margin-right: 10px;
+}
+
+.option.correct {
+  background-color: #059426;
+}
+
+.option.incorrect {
+  background-color: #881720;
+}
+
+.next-button {
+  display: block;
+  background-color: #056d3e; /* Purple button */
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 30px auto 0;
+}
+
+.next-button:hover {
+  background-color: #8638d5; /* Darker purple on hover */
+}
+
+/* Progress bar styling */
+.progress-bar {
+  height: 10px;
+  background-color: #3b3e54;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #7c52f5; /* Match with button color */
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+
+/* Result page styling */
+.result-container {
+  text-align: center;
+  color: white;
+}
+
+.result-summary {
+  margin-bottom: 20px;
+}
+
+.result-text h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.result-text p {
+  margin: 5px 0;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  font-size: 4em; /* Increase the avatar size here */
+  margin: 0 auto;
+}
+
+/* No questions styling */
+.no-questions-container {
+  text-align: center;
+  color: white;
+}
+
+.no-questions-container button {
+  background-color: #9a4ef2; /* Match button style */
+}
+
+.no-questions-container button:hover {
+  background-color: #8638d5; /* Match hover style */
+}
+
+/* Ready message styling */
+.quiz-container h2 {
+  margin-bottom: 20px;
+}
+
+.quiz-container button {
+  background-color: #9a4ef2; /* Match button style */
+}
+
+.quiz-container button:hover {
+  background-color: #8638d5; /* Match hover style */
+}
